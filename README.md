@@ -12,6 +12,16 @@ https://www.kaggle.com/lenamkhanh/analyzing-the-news/data
 
 The entire data set is 143000 articles.  I chose to work with a subset of 15000, 1000 from each of the publications. This number seemed adequate for my purposes.
 
+## Methods
+
+I used the gensim library for preprocessing and the SpaCy library for lemmatization and stop word removal.  SpaCy was also used for named entity recognition, and named entities were repeated three times in the bag-of-words to give them increased weight.  
+
+I used gensim's implementation of latent Dirichlet analysis (LDA) for topic - document modeling.
+
+The iterative procedure uses the entropy of each document's loadings over topics.  After a round of LDA, the entropy of each document with respect to the topics is calculated, and those documents having entropy in the top 5% are dropped.  This procedure is repeated until a stopping criterion is satisfied.  Various stopping criteria could work - I ended up requiring that the mean entropy be less than a threshold.
+
+See the notebook for details.
+
 
 ## Conclusions
 
