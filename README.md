@@ -2,8 +2,7 @@
 
 ## Overview
 
-Topic document modeling often consists of a clustering of documents and the simultaneous creation of a set of topics that characterize a cluster.  This is a bit of an over-simplification, as the correspondence between topics and documents does not have to be one-to-one, and the methodology can be adjusted in many ways.
-In this project, I applied topic document modeling to a corpus of 15000 news articles.  I developed an iterative procedure to tighten up the topics and to limit their number.  The approach gives reasonable results, evaluated either by coherence and perplexity scores or by manual inspection of the resulting topic - document correspondence.
+In this project, I applied topic document modeling to a corpus of 15000 news articles.  I imagined a human assigned the same task, and thought that anyone victimized with this might choose to limit the number of topics, putting articles not corresponding to a topic in an "other" pile.  I developed an iterative procedure to do just this by discarding articles assigned to a large number of topics.  The approach gives reasonable results, evaluated either by coherence and perplexity scores or by manual inspection of the resulting topic - document correspondence.
 
 ## Data
 
