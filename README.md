@@ -31,7 +31,7 @@ Additional work could include a more detailed look at how topic definitions shif
 
 It may also be interesting to re-classify all documents once the iterative process has settled on a set of coherent topics.
 
-Another direction would be to look at how publications appear relative to the topics.  Clustering of publications and topics can be informative, as shown in the appendix.
+Another direction would be to look at how publications appear relative to the topics.  Clustering of publications and topics can be informative, as shown in the appendix of the slides.
 
 
 
